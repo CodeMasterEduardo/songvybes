@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "e2e"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace song-vybes-app-client build",
+    "dev": "yarn workspace song-vybes-app-server dev",
+    "dev:debug": "yarn workspace song-vybes-app-server dev:debug",
+    "heroku-postbuild": "yarn workspace song-vybes-app-client build",
+    "start": "yarn workspace song-vybes-app-server start",
+    "dev:cypress": "yarn workspace song-vybes-app-server dev:e2e",
+    "e2e:open": "yarn workspace song-vybes-app-e2e e2e:open",
+    "e2e:run": "yarn workspace song-vybes-app-e2e e2e:run"
+  },
+  "engines": {
+    "node": "^16.18"
+  }
+}
