@@ -12,3 +12,36 @@
   -moz-tab-size: 4;
   tab-size: 4;
 }
+
+:root {
+  --font-family: "Open Sans", sans-serif;
+  --font-size: 1rem;
+  --font-weight: 420;
+  --line-height: 1.5;
+  --color: #00da07;
+  --background-color: #000000;
+  --button-color: #00da07;
+  --tile-color: #4d4d4d;
+  --button-text: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  color: var(--color);
+  background: linear-gradient(to top, var(--color) 0%, var(--background-color) 25%, var(--background-color) 100%);
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.make-transparent{
+  background: linear-gradient(to top, var(--background-color) 10%, var(--background-color) 75%, var(--color) 100%);
+}
+
+.make-transparent .menu{
+  background: transparent;
+}

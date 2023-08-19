@@ -21,10 +21,10 @@ const TopBar = ({ user }) => {
   ];
 
   return (
-    <div className="top-bar">
+    <div className="top-bar make-transparent grid-x">
       <div className="top-bar-left">
         <ul className="menu">
-          <li className="menu-text">App</li>
+          <li className="menu-text">SongVybeS</li>
           <li>
             <Link to="/">Home</Link>
           </li>
